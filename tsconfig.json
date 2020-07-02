@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@commands/*": ["commands/*"],
+      "@common/*": ["common/*"]
+    },
     "module": "commonjs",
     "removeComments": true,
     "lib": ["dom", "es2017"],
@@ -7,12 +12,7 @@
     "outDir": "build/",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "baseUrl": "src/",
-    "paths": {
-      "@commands/*": ["commands/*"],
-      "@common/*": ["common/*"]
-    }
+    "skipLibCheck": true
   },
   "include": ["./src"],
   "exclude": ["node_modules", "lib"]
